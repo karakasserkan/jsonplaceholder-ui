@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23606c38' viewBox='0 0 16 16'%3E%3Cpath d='M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.459-.354.529-.465.069-.111.062-.301-.004-.41a4.68 4.68 0 0 0-.281-.352c-.03-.036-.084-.08-.153-.133a.93.93 0 0 0-.104-.067c-.038-.02-.076-.037-.115-.052-.073-.028-.146-.048-.22-.066-.215-.045-.516-.062-.759-.067-.29-.005-.636.02-.696.038a.75.75 0 0 0-.695.698c-.003.131.011.243.047.362.028.093.06.17.102.264.103.225.253.446.42.67.157.211.34.415.53.629a26.947 26.947 0 0 0 .714.84c.126.127.19.17.238.207.132.091.22.091.271.052.055-.043.069-.125.112-.553.022-.211.048-.513.063-.939.013-.371.01-.649-.012-.881a1.47 1.47 0 0 0-.06-.277c-.034-.094-.093-.193-.156-.27z'/%3E%3C/svg%3E" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="JSONPlaceholder API'sine modern bir arayüz ile erişin. Kullanıcıları, gönderileri, albümleri keşfedin ve favorilerinize kaydedin." />
+    <meta name="keywords" content="JSONPlaceholder, API, React, Bootstrap, UI, kullanıcılar, gönderiler, albümler" />
+    <meta name="author" content="JSONPlaceholder UI" />
+    <meta name="theme-color" content="#606c38" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="JSONPlaceholder UI" />
+    <meta property="og:description" content="JSONPlaceholder API'sine modern bir arayüz ile erişin" />
+    <meta property="og:image" content="/og-image.jpg" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="JSONPlaceholder UI" />
+    <meta name="twitter:description" content="JSONPlaceholder API'sine modern bir arayüz ile erişin" />
+    
+    <title>JSONPlaceholder UI - Modern API Arayüzü</title>
+    
+    <style>
+      /* Özel CSS Renk Değişkenleri */
+      :root {
+        --dark-green: #283618;
+        --medium-green: #606c38;
+        --cream: #fefae0;
+        --light-amber: #dda15e;
+        --amber: #bc6c25;
+        --bs-primary: #606c38;
+        --bs-primary-rgb: 96, 108, 56;
+        --bs-primary-text-emphasis: #283618;
+        --bs-link-color: #606c38;
+        --bs-link-hover-color: #283618;
+        --bs-danger: #bc6c25;
+        --bs-danger-rgb: 188, 108, 37;
+      }
+      
+      body {
+        background-color: var(--cream);
+        color: var(--dark-green);
+      }
+      
+      .text-primary {
+        color: var(--medium-green) !important;
+      }
+      
+      .bg-primary {
+        background-color: var(--medium-green) !important;
+      }
+      
+      .btn-primary {
+        background-color: var(--medium-green) !important;
+        border-color: var(--medium-green) !important;
+        color: var(--cream) !important;
+      }
+      
+      .btn-outline-primary {
+        border-color: var(--medium-green) !important;
+        color: var(--medium-green) !important;
+      }
+      
+      .btn-outline-primary:hover {
+        background-color: var(--medium-green) !important;
+        color: var(--cream) !important;
+      }
+      
+      .btn-danger {
+        background-color: var(--amber) !important;
+        border-color: var(--amber) !important;
+        color: var(--cream) !important;
+      }
+      
+      .nav-tabs .nav-link.active {
+        color: var(--dark-green) !important;
+        border-color: var(--light-amber) !important;
+      }
+      
+      a {
+        color: var(--medium-green);
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: var(--dark-green);
+      }
+      
+      .card {
+        border-radius: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
